@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="card-header">
+            <nav>
+                <ul class="nav-links">
+                    <li><a>Work</a></li>
+                    <li><a>Story</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </nav>
+            <div class="name">rihana ramoca</div>
+            <div class="desc">Description</div>
+            <a onclick="Modal.open()" href="#" class="hello-btn">Say Hello</a>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal">
+                <div class="modal-content">
+                    <a class="modal-close" onclick="Modal.close()" href="#" class="hello-btn">
+                        Close me
+                    </a>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script>
+    const Modal = {
+        open() {
+            document.querySelector('.modal-overlay')
+                .classList
+                .add('active')
+        },
+        close() {
+            document
+                .querySelector('.modal-overlay')
+                .classList
+                .remove('active')
+        }
+    }
+
+
+</script>
+
+</html>
